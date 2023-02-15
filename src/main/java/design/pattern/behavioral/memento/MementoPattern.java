@@ -36,7 +36,7 @@ class Memento {
 }
 
 class CareTaker {
-    private final List<Memento> mementoList = new ArrayList<Memento>();
+    private final List<Memento> mementoList = new ArrayList<>();
 
     public void add(Memento state) {
         mementoList.add(state);

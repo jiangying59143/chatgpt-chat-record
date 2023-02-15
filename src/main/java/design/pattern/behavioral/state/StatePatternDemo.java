@@ -37,16 +37,16 @@ class Context {
 public class StatePatternDemo {
     public static void main(String[] args) {
         Context context = new Context();
-        State startState = new StartState();
-        startState.doAction();
+        State state = new StartState();
+        state.doAction();
 
-        context.setState(startState);
+        context.setState(state);
         System.out.println(context.getState().toString());
 
-        State stopState = new StopState();
-        stopState.doAction();
+        state = new StopState();
+        state.doAction();
 
-        context.setState(stopState);
+        context.setState(state);
         System.out.println(context.getState().toString());
     }
 }
